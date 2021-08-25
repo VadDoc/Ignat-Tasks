@@ -3,7 +3,6 @@
   justify-content: space-between;
   width: 1000px;
   padding: 40px;
-  background-color: darkcyan;
 }
 
 .avatar img {
@@ -15,7 +14,6 @@
 .textWrapper {
   width: 100%;
   padding-left: 50px;
-  background-color: darkcyan;
   overflow: hidden;
 }
 
@@ -29,15 +27,16 @@
   padding: 20px;
   margin-left: 20px;
   width: 90%;
-  border-radius: 20px;
-  
+  border-radius: 20px 20px 20px 0;
+  /*не позволяет слову вылезти за пределы контейнера*/
+  word-wrap: break-word;
 }
 
 .text:after {
   position: absolute;
   content: '';
   bottom: 0;
-  left: -100px;
+  left: -119px;
   width: 120px;
   height: 100px;
   background-color: floralwhite;
@@ -54,8 +53,6 @@
   background-color: darkcyan;
   z-index: 10;
 }
-
-
 
 .text p {
   margin: 10px 0;
@@ -78,5 +75,11 @@
   right: 20px;
   color: darkcyan;
   font-size: 26px;
+}
+
+.angle {
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle at 0 0, rgba(0,0,0,0) 15px, darkcyan 0);
 }
 
