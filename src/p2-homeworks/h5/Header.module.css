@@ -1,0 +1,65 @@
+.header {
+    display: flex;
+    transform: translateX(-430px);
+    transition: .6s ease;
+}
+
+.headerActive {
+    display: flex;
+    transform: translateX(0px);
+    transition: .6s ease;
+}
+
+.headerActive div,
+.header div {
+    margin: 0 10px;
+}
+
+.headerActive a,
+.header a {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.headerActive a:hover,
+.header a:hover {
+    color: goldenrod;
+}
+
+.headerActive .toggle,
+.header .toggle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 50px;
+    height: 50px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: goldenrod;
+    cursor: pointer;
+    margin-top: -10px;
+    margin-left: 90px;
+}
+
+.headerActive .toggle:after {
+    position: absolute;
+    content: 'x';
+    font-size: 40px;
+    top: -2px;
+    left: 15px;
+}
+
+.header .toggle span {
+    display: block;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 23px;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+}
