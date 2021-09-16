@@ -4,7 +4,7 @@
 .affair {
     display: flex;
     padding-bottom: 10px;
-align-items: center;
+    align-items: center;
 }
 
 .affair div:nth-child(1) {
@@ -15,7 +15,7 @@ align-items: center;
     width: 100px;
 }
 
-button {
+.affairs button {
     padding: 5px 30px;
     margin-right: 5px;
     border-radius: 3px;
@@ -27,7 +27,7 @@ button {
     transition: .4s ease;
 }
 
-button:hover {
+.affairs button:hover {
     background-color: #f9f2ba;
     transform: scale(1.05);
 }
