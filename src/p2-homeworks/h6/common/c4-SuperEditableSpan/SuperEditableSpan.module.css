@@ -1,0 +1,22 @@
+.superEditableSpan {
+    position: relative;
+    height: 50px;
+}
+
+.span {
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.span:before {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    content: '\270E'
+}
+
+.input {
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
