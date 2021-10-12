@@ -1,17 +1,21 @@
 import React from 'react'
+import HW7 from "../../h7/HW7";
+import HW8 from "../../h8/HW8";
 
 type PropsType = {
   title: string
 }
 
 function Junior(props: PropsType) {
-    return (
-        <div>
-          <h1>{props.title}</h1>
-          <p>I am not a junior yet</p>
-
-        </div>
-    )
+  return (
+    <div>
+      <h1>{props.title}</h1>
+      <HW7/>
+      <HW8/>
+      {/*<HW9/>*/}
+      {/*<HW10/>*/}
+    </div>
+  )
 }
 
 export default Junior
