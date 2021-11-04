@@ -1,4 +1,5 @@
 import React from 'react'
+import HW11 from "../../h11/HW11";
 
 type PropsType = {
   title: string
@@ -8,9 +9,8 @@ function JuniorPlus(props: PropsType) {
     return (
         <div>
           <h1>{props.title}</h1>
+          <HW11/>
 
-          <p>I am not a junior yet</p>
-          <p>But soon I will become a middle</p>
         </div>
     )
 }
