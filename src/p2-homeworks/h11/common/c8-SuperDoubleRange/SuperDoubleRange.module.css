@@ -4,6 +4,7 @@ input[type=range].double {
     top: 3px;
     width: 200px;
     background-color: inherit;
+    pointer-events: none;
 }
 input[type=range].double::-webkit-slider-runnable-track {
     border-radius: 10px/100%;
@@ -22,6 +23,8 @@ input[type=range].double::-webkit-slider-thumb {
     -webkit-appearance: none;
     margin-top: -15px;
     z-index: 0;
+    pointer-events: auto;
+
 }
 
 .wrapper {
